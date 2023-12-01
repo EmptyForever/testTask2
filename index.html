@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Kalinkin Aleks</h1>
+    <form class="form-valid" id="test">
+      <!-- блок личная информация -->
+      <article class="personal-info">
+        <label for="userName">
+          Ваше имя: <br />
+          <input type="text" required id="userName" />
+        </label>
+        <label for="userMail">
+          Ваш емаил: <br />
+          <input type="email" required />
+        </label>
+        <label for="userTel">
+          Ваш телефон: <br />
+          <input type="tel" required placeholder=" +7(999) 999-99-99" class="telephon"/>
+        </label>
+      </article>
+      <!-- блок информация о бизнесе -->
+      <article class="bisnes-info">
+        <label for="expected">
+          Ожидаемый оборот: <br />
+          <input type="number" required step="0.01" />
+        </label>
+        <label for="dropdown">
+          Выбор индустрии: <br />
+          <select id="dropdown">
+            <option value="Индустрия 1">Индустрия 1</option>
+            <option value="Индустрия 2">Индустрия 2</option>
+            <option value="Индустрия 3">Индустрия 3</option>
+          </select>
+        </label>
+        <label for="agree">
+          Я принимаю правила сервиса
+          <input type="checkbox" id="agree" required/>
+        </label>
+      </article>
+      <!-- отправить -->
+      <button type="submit" form="test" class="submit-form">отправить</button>
+    </form>
+    <script src="./script.js"></script>
+    <script src="./imask.js"></script>
+  </body>
+</html>

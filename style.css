@@ -1,0 +1,22 @@
+.form-valid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.personal-info,
+.bisnes-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.submit-form {
+  text-transform: uppercase;
+  padding: 1em 2em;
+  color: #fff;
+  background-color: #5361f0;
+
+  border: none;
+}
